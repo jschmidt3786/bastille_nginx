@@ -1,9 +1,10 @@
 # Bastille Jail Template for nginx
 # version 0.1.0  2021-1-24
-INCLUDE jschmidt3786/bastille_base
+#INCLUDE jschmidt3786/bastille_base
 
 PKG nginx
 SYSRC nginx_enable="YES"
 CP usr /
 SERVICE nginx start
 RDR tcp 80 80
+RDR tcp 443 443
